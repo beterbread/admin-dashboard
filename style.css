@@ -74,19 +74,25 @@ table {
 
 /*Sidebar*/
 .sidebar {
-  background-color: #a3e635;
+  background-color: #c8a2c8;
 }
 
 .side-content {
   display: flex;
   align-items: center;
   margin-bottom: 5px;
+  color: white;
+  font-family: 'Averia Libre', cursive;
+}
+
+p:hover {
+  cursor: pointer;
 }
 
 .sidebar div:nth-child(1) {
-  margin-top: 10px;
+  margin-top: 30px;
   margin-bottom: 30px;
-  font-size: 20px;
+  font-size: 40px;
 }
   
 .sidebar div:nth-child(7){
@@ -95,18 +101,18 @@ table {
 
 /*Icons*/
 img {
-  margin-left: 10px;
-  margin-right: 8px;
+  margin-left: 20px;
+  margin-right: 10px;
 }
 
 #dashboard { 
-  margin-left: 8px;
-  margin-right: 5px;
-  height: 30px;
-  width: 30px;
+  margin-left: 15px;
+  margin-right: 8px;
+  height: 45px;
+  width: 45px;
 }
 
 img:not(#dashboard) {
-  height: 20px;
-  width: 20px;
+  height: 35px;
+  width: 35px;
 }
