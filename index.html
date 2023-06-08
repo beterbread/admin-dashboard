@@ -13,7 +13,7 @@
 <body>
   <div class="container">
     <div class="sidebar">
-      <div class="side-content"><img id="dashboard" src="./icons/view-dashboard.svg"><p>Dashboard</p></div>
+      <div class="side-content"><img id="dashboard" src="./icons/view-dashboard.svg">Dashboard</div>
       <div class="side-content"><img src="./icons/home-outline.svg"><p>Home</p></div>
       <div class="side-content"><img src="./icons/card-account-details-outline.svg"><p>Profile</p></div>
       <div class="side-content"><img src="./icons/message-reply-outline.svg"><p>Messages</p></div>
@@ -26,26 +26,111 @@
     </div>
     <div class="header">
       <div class="first-row">
-        <img src="./icons/magnify.svg">
-        <div id="search-bar"></div>
-        <img src="./icons/bell-ring-outline.svg">
-        <img id="small-cat" src="./icons/cat.png">
-        <p>Peter Kim</p>  
+        <div>
+          <img class="header-icon" src="./icons/magnify.svg">
+          <div id="search-bar"></div>  
+        </div>
+        <div>
+          <img class="header-icon" src="./icons/bell-ring-outline.svg">
+          <img id="small-cat" src="./icons/cat.png">
+          <p>Peter Kim</p>   
+        </div>
       </div>
       <div class="second-row">
-        <img id="big-cat" src="./icons/cat.png">  
-        <p><span>Hi there,</span><br><span>Peter Kim (@beterbread)</span></p>
-        <div>New</div>
-        <div>Upload</div>
-        <div>Share</div>
+        <div>
+          <img id="big-cat" src="./icons/cat.png">  
+          <p id="header-text"><span id="text-one">Hi there,</span><br><span id="text-two">Peter Kim (@beterbread)</span></p>  
+        </div>
+        <div>
+          <div class="header-btn">New</div>
+          <div class="header-btn">Upload</div>
+          <div class="header-btn">Share</div>  
+        </div>
       </div>
     </div>
     <div class="main-content">
       <div class="projects">
+        <p id="project-caption">Your Projects</p>
+        <div class="card">
+          <p class="card-title">Mock title</p>
+          <p class="card-descr">Mock description</p>
+          <img src="./icons/star-plus-outline.svg">
+          <img src="./icons/eye-plus-outline.svg">
+          <img src="./icons/source-fork.svg">
+        </div>
+        <div class="card">
+          <p class="card-title">Mock title</p>
+          <p class="card-descr">Mock description</p>
+          <img src="./icons/star-plus-outline.svg">
+          <img src="./icons/eye-plus-outline.svg">
+          <img src="./icons/source-fork.svg">
+        </div>
+        <div class="card">
+          <p class="card-title">Mock title</p>
+          <p class="card-descr">Mock description</p>
+          <img src="./icons/star-plus-outline.svg">
+          <img src="./icons/eye-plus-outline.svg">
+          <img src="./icons/source-fork.svg">
+        </div>
+        <div class="card">
+          <p class="card-title">Mock title</p>
+          <p class="card-descr">Mock description</p>
+          <img src="./icons/star-plus-outline.svg">
+          <img src="./icons/eye-plus-outline.svg">
+          <img src="./icons/source-fork.svg">
+        </div>
+        <div class="card">
+          <p class="card-title">Mock title</p>
+          <p class="card-descr">Mock description</p>
+          <img src="./icons/star-plus-outline.svg">
+          <img src="./icons/eye-plus-outline.svg">
+          <img src="./icons/source-fork.svg">
+        </div>
+        <div class="card">
+          <p class="card-title">Mock title</p>
+          <p class="card-descr">Mock description</p>
+          <img src="./icons/star-plus-outline.svg">
+          <img src="./icons/eye-plus-outline.svg">
+          <img src="./icons/source-fork.svg">
+        </div>
       </div>
       <div class="announcements">
+        <p class="ann-text">Announcements</p>
+        <div class="ann-card">
+          <div>
+            <p class="ann-title">Title</p>
+            <p class="ann-descr">Description</p>
+          </div> 
+          <div>
+            <p class="ann-title">Title</p>
+            <p class="ann-descr">Description</p>
+          </div>
+          <div>
+            <p class="ann-title">Title</p>
+            <p class="ann-descr">Description</p>
+          </div> 
+        </div>
       </div>
-      <div class="trending">        
+      <div class="trending">    
+        <p class="trending-text">Trending</p>   
+        <div class="trending-card">
+          <div>
+            <img class="trending-icon" src="./icons/cat.png"> 
+            <p><span class="at">@Joe</span><br><span class="project">Projects</span></p>
+          </div>
+          <div>
+            <img class="trending-icon" src="./icons/cat.png"> 
+            <p><span class="at">@Joe</span><br><span class="project">Projects</span></p>
+          </div>
+          <div>
+            <img class="trending-icon" src="./icons/cat.png"> 
+            <p><span class="at">@Joe</span><br><span class="project">Projects</span></p>
+          </div>
+          <div>
+            <img class="trending-icon" src="./icons/cat.png"> 
+            <p><span class="at">@Joe</span><br><span class="project">Projects</span></p>
+          </div>
+        </div> 
       </div>
     </div>
   </div>

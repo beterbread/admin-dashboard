@@ -88,7 +88,7 @@ body {
   font-size: 1.5vw
 }
 
-p:hover {
+.side-content > p:hover {
   cursor: pointer;
 }
 
@@ -122,44 +122,7 @@ p:hover {
 
 /*Header*/
 .header {
-  background-color: white;
-}
-
-.header img:hover {
-  cursor: pointer;
-}
-
-.second-row div {
-  cursor: pointer;
-}
-
-.first-row {
-  display: flex;
-  align-items: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-#search-bar {
-  width: 300px;
-  height: 20px;
-  border-radius: 20px;
-  background-color: #f2f7f2;
-  margin-right: 90px;
-}
-
-.first-row img {
-  height: 20px;
-  width: 20px;
-}
-
-.first-row img:first-child {
-  margin-left: 15px;
-  margin-right: 10px;
-}
-
-.first-row img:nth-child(3), #small-cat {
-  margin-right: 10px;
+  background-color: white; 
 }
 
 #small-cat, #big-cat {
@@ -170,32 +133,24 @@ p:hover {
   padding: 5px;
 }
 
-.second-row {
-  display: flex;
-  align-items: center;
-  padding-bottom: 10px;
-}
-
 #big-cat { 
   height: 50px;
   width: 50px;
-  margin-left: 15px;
-  margin-right: 10px;
 }
 
-.second-row p {
-  margin-right: 100px;
+#search-bar {
+  width: 300px;
+  height: 20px;
+  border-radius: 20px;
+  background-color: #f2f7f2;
 }
 
-p span:nth-child(1) {
-  font-size: 12px;
+.header-icon {
+  height: 20px;
+  width: 20px;
 }
 
-p span:nth-child(3) {
-  font-size: 20px;
-}
-
-.second-row div {
+.header-btn {
   width: 60px;
   height: 30px;
   line-height: 30px;
@@ -206,10 +161,211 @@ p span:nth-child(3) {
   vertical-align: middle;
   font-size: 12px;
   font-weight: bold;
+}
+
+#text-one {
+  font-size: 12px;
+}
+
+#text-two {
+  font-size: 20px;
+}
+
+.first-row, .second-row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.first-row > div, .second-row > div {
+  display: flex;
+  align-items: center;
+}
+
+.first-row, .second-row {
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 30px;
+}
+
+.second-row {
+  padding-bottom: 10px;
+}
+
+#small-cat, #header-text, .header-btn:nth-of-type(2) {
+  margin-left: 10px;
   margin-right: 10px;
+}
+
+.header-icon:hover {
+  cursor: pointer;
+}
+
+.header-btn:hover {
+  cursor: pointer;
 }
 
 /*Main content*/ 
 .main-content {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: auto 1fr;
   background-color: #f2f7f2;  
+  padding-bottom: 40px;
+}
+
+/*Project section*/
+.projects {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-auto-rows: 1fr;
+  gap: 10px;
+  padding-left: 10px;
+  padding-top: 20px;
+}
+
+#project-caption {
+  grid-column: 1 / 3;
+}
+
+/*Card*/
+.card {
+  border-left: 5px #c2b97f solid;
+  border-radius: 5px;
+  background-color: white;
+  width: 225px;
+  height: 175px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.card-title {
+  margin-top: 20px;
+}
+
+.card-descr {
+  font-size: 12px;
+  color: grey;
+}
+
+.card > img {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  bottom: 20px;
+}
+
+.card > img:nth-of-type(1) {
+  right: 80px;
+}
+
+.card > img:nth-of-type(2) {
+  right: 50px;  
+}
+
+.card > img:nth-of-type(3) {
+  right: 20px;
+}
+
+.card > img:hover {
+  cursor: pointer;
+}
+
+/*Announcement section*/
+.announcements {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  margin-left: 15px;
+}
+
+.ann-text {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.ann-card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 5px;
+  width: 140px;
+  height: auto;
+  padding: 10px;
+}
+
+.ann-card > div:nth-of-type(1) {
+  padding-bottom: 10px;
+}
+
+.ann-card > div:nth-of-type(2) {
+  border-top: 0.5px lightgrey solid;
+  border-bottom: 0.5px lightgrey solid;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.ann-card > div:nth-of-type(3) {
+  padding-top: 10px;
+}
+
+.ann-title {
+  font-size: 14px;
+}
+
+.ann-descr {
+  font-size: 10px;
+  color: gray;
+}
+
+/*Trending section*/
+.trending {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  margin-left: 15px;
+}
+
+.trending-text {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.trending-card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 5px;
+  width: 130px;
+  height: auto;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.trending-card > div {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.trending-icon {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  background-color: #c2b97f;
+  padding: 5px;
+}
+
+.trending-icon + p {
+  margin-left: 5px;
+}
+
+.at {
+  font-size: 12px;
+}
+
+.project {
+  font-size: 10px;
+  color: grey;
 }
