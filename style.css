@@ -254,6 +254,7 @@ body {
 .card-descr {
   font-size: 14px;
   color: grey;
+  max-width: 90%;
 }
 
 .card > img {
@@ -376,4 +377,16 @@ body {
 .project {
   font-size: 1vw;
   color: grey;
+}
+
+.trending-card div:nth-child(2) .trending-icon {
+  background-color: #9b84a3;
+}
+
+.trending-card div:nth-child(3) .trending-icon {
+  background-color: #b4c6a0;
+}
+
+.trending-card div:nth-child(4) .trending-icon {
+  background-color: #e2c78b;
 }
