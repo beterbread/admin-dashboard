@@ -47,11 +47,16 @@ table {
 	border-spacing: 0;
 }
 
+/*Font*/
+body {
+  font-family: 'Averia Libre', cursive;
+}
+
 /*Grid layout*/
 .container {
   display: grid;
   grid-template-columns: 1fr 4fr;
-  grid-template-rows: 200px 1fr;
+  grid-template-rows: auto 1fr;
   height: 100vh;
 }
 
@@ -61,13 +66,11 @@ table {
 }
 
 .header {
-  background-color: white;
   grid-column: 2 / 3;
   grid-row: 1 / 2;
 }
 
 .main-content {
-  background-color: whitesmoke;  
   grid-column: 2 / 3;
   grid-row: 2 / 3;
 }
@@ -81,8 +84,7 @@ table {
   display: flex;
   align-items: center;
   margin-bottom: 0.7vw;
-  color: white;
-  font-family: 'Averia Libre', cursive;
+  color: #f2f7f2;
   font-size: 1.5vw
 }
 
@@ -100,8 +102,8 @@ p:hover {
   margin-bottom: 2vw;
 }
 
-/*Icons*/
-img {
+/*Sidebar icons*/
+.side-content > img {
   margin-left: 1.5vw;
   margin-right: 0.5vw;
 }
@@ -113,7 +115,101 @@ img {
   width: 2.5vw;
 }
 
-img:not(#dashboard) {
+.side-content > img:not(#dashboard) {
   height: 2.25vw;
   width: 2.25vw;
+}
+
+/*Header*/
+.header {
+  background-color: white;
+}
+
+.header img:hover {
+  cursor: pointer;
+}
+
+.second-row div {
+  cursor: pointer;
+}
+
+.first-row {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#search-bar {
+  width: 300px;
+  height: 20px;
+  border-radius: 20px;
+  background-color: #f2f7f2;
+  margin-right: 90px;
+}
+
+.first-row img {
+  height: 20px;
+  width: 20px;
+}
+
+.first-row img:first-child {
+  margin-left: 15px;
+  margin-right: 10px;
+}
+
+.first-row img:nth-child(3), #small-cat {
+  margin-right: 10px;
+}
+
+#small-cat, #big-cat {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  background-color: #c2b97f;
+  padding: 5px;
+}
+
+.second-row {
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+#big-cat { 
+  height: 50px;
+  width: 50px;
+  margin-left: 15px;
+  margin-right: 10px;
+}
+
+.second-row p {
+  margin-right: 100px;
+}
+
+p span:nth-child(1) {
+  font-size: 12px;
+}
+
+p span:nth-child(3) {
+  font-size: 20px;
+}
+
+.second-row div {
+  width: 60px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 20px;
+  background-color: #c8a2c8;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 12px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+/*Main content*/ 
+.main-content {
+  background-color: #f2f7f2;  
 }
